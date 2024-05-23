@@ -11,10 +11,6 @@ body {
     margin: 0;
 }
 
-p {
-    margin: 10px;
-}
-
 /* time to do header stuff */
 header {
     display: flex;
@@ -52,10 +48,82 @@ li {
 
 header a {
     color: #8493ad;
+    font-weight: bold;
 }
 
+/* main body section; handles stuff for the side column and main inserts */
+section {
+    display: flex;
+    margin: 30px 0;
+}
+
+aside {
+    flex: 0 0 120px;
+    padding: 5px;
+    border-right: 3px solid;
+}
+
+article {
+    display: inline-block;
+}
+
+p {
+    margin: 0 10px 10px;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: right;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px dashed;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 80%;
+    padding: 5px;
+    background-color: #8493ad;
+}
+
+figure h4 {
+    font-size: 125%;
+    padding: 5px;
+}
+
+
+#card-large {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 500px;
+    border: 2px solid;
+    margin: 0 10px 10px;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 250px;
+    border: 2px solid;
+    margin: 0 10px 10px;
+}
 /* time to do footer stuff */
-a {
+footer {
+    display: flex;
+}
+
+footer nav {
+    display: inline-block;
+    flex: auto;
+}
+
+footer a {
     color: #454950;
     font-weight: bold;
 }
