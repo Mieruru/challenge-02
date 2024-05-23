@@ -4,6 +4,10 @@
 
 Homework assignment for the first week of BootcampSpot's full stack webdev course, focusing on more advanced CSS implementation, including flex styling, flexboxes, and pseudo-elements, with an emphasis on increasing readability by including ability to adapt to different device screen sizes.
 
+## Website URL
+
+https://mieruru.github.io/portfolio/
+
 ## Installation
 
 N/A
