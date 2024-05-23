@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: #454950;
     margin: 0;
 }
@@ -15,6 +16,7 @@ body {
 header {
     display: flex;
     width: 100%;
+    height: 75px;
     background-color: #454950;
     align-items: center;
 }
@@ -37,6 +39,7 @@ nav {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -51,47 +54,65 @@ header a {
     font-weight: bold;
 }
 
+#subheader {
+    display: flex;
+    height: 50px;
+    background-color: #8493ad;
+    justify-content: right;
+    align-items: end;
+}
+
+h3 {
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+
 /* main body section; handles stuff for the side column and main inserts */
 section {
     display: flex;
     margin: 30px 0;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
 aside {
     flex: 0 0 120px;
     padding: 5px;
+    margin-left: 15px;
     border-right: 3px solid;
 }
 
-article {
-    display: inline-block;
-}
-
 p {
-    margin: 0 10px 10px;
+    margin: 5px;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 175%;
     text-align: right;
 }
 
-.cards {
+#cards {
     display: flex;
     flex-wrap: wrap;
-    border: 4px dashed;
+    margin-left: 15px;
 }
 
 figure {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     font-size: 80%;
     padding: 5px;
     background-color: #8493ad;
+    justify-content: end;
 }
 
-figure h4 {
+h4 {
+    position: relative;
     font-size: 125%;
     padding: 5px;
 }
@@ -99,20 +120,22 @@ figure h4 {
 
 #card-large {
     display: flex;
-    flex-wrap: wrap;
     flex: 1 0 500px;
+    height: 250px;
     border: 2px solid;
-    margin: 0 10px 10px;
+    margin: 5px;
 }
 
 
 .card {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 250px;
+    flex: 1 250px;
+    height: 100px;
     border: 2px solid;
-    margin: 0 10px 10px;
+    margin: 5px;
 }
+
 /* time to do footer stuff */
 footer {
     display: flex;
@@ -120,7 +143,7 @@ footer {
 
 footer nav {
     display: inline-block;
-    flex: auto;
+    margin-left: 15px;
 }
 
 footer a {
@@ -134,5 +157,7 @@ footer a {
 }
 
 @media screen and (max-width:576px) {
-
+    nav  ul {
+        flex-wrap: wrap;
+    }
 }
